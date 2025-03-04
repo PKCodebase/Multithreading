@@ -23,14 +23,14 @@ public class Lab6 {
         Runnable th= new MyThread2();
 
 
-        Thread mt = new Thread(th);
+        Thread mt = new Thread(th,"A");
         mt.start();
 
 
-        Thread mt1 = new Thread(th);
+        Thread mt1 = new Thread(th,"B");
         mt1.start();
 
-        Thread mt2 = new Thread(th);
+        Thread mt2 = new Thread(th,"C");
         mt2.start();
     }
 
